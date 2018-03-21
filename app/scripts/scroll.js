@@ -1,13 +1,3 @@
-// //////////////
-// CHARACTER
-// //////////////
-
-
-
-
-// //////////////
-// SCROLL
-// //////////////
 var page = document.getElementById('page');
 var last_pane = page.getElementsByClassName('pane');
 last_pane = last_pane[last_pane.length-1];

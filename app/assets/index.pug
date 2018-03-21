@@ -3,11 +3,15 @@ html
     include require/head.pug
     body
         #page
+            .fixed
+                .character
+            
             //- top pane
             .pane 
                 include require/clouds.pug
         
             //- bottom pane
             .pane
+                include require/ground.pug
             
     script(src="js/app.js")
