@@ -1,3 +1,9 @@
-.h1 {
-    color: red;
+@media (max-height: 600px) {
+	.ground {
+		margin-bottom: -150px;
+	}
+}
+
+body {
+	overflow-x:hidden;
 }

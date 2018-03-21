@@ -1,0 +1,27 @@
+#page {
+	background: linear-gradient(#1566AC, #77A1CA);
+	overflow:hidden;
+	white-space:nowrap;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	flex-wrap:no-wrap;
+}
+
+.pane {
+	display: flex;
+	flex:0 0 200vw;
+	height:100vh;
+	position: absolute;
+
+	&:nth-child(1) {
+		align-items: flex-start;
+	}
+
+	&:nth-child(2) {
+		align-items: flex-end;
+	}
+}

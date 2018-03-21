@@ -1,0 +1,72 @@
+.clouds {
+	position: absolute;
+	display: flex;
+	margin-top: 13vh;
+}
+
+.cloud-figure1 {
+	box-shadow: 0px 5px 20px -8px #000;
+}
+
+@keyframes cloud-bounce {
+	0% {transform: translate3d(0px, 10px, 0px);}
+	50% {transform: translate3d(0px, 0px, 0px);}
+	100% {transform: translate3d(0px, 10px, 0px);}
+}
+
+@for $i from 1 through 4 {
+	.cloud#{$i} {
+		height: 200px;
+		width: 300px;
+		margin-top: random(100) + px;
+		margin-left: 300 + random(100) + px;
+		animation-name: cloud-bounce;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	.cloud#{$i} > * {
+		background-color: #fff;
+	}
+}
+
+.cloud-figure1 {
+	width: 200px;
+	height: 25px;
+	border-bottom-left-radius: 10em;
+	border-bottom-right-radius: 10em;
+}
+
+.cloud-figure2 {
+	width: 75px;
+	height: 40px;
+	border-top-left-radius: 15em;
+	border-top-right-radius: 15em;
+	margin-top: -65px;
+}
+
+.cloud-figure3 {
+	width: 90px;
+	height: 60px;
+	border-top-left-radius: 15em;
+	border-top-right-radius: 15em;
+	margin-top: -60px;
+	margin-left: 35px;
+}
+
+.cloud-figure4 {
+	width: 80px;
+	height: 83px;
+	border-top-left-radius: 15em;
+	border-top-right-radius: 15em;
+	margin-top: -83px;
+	margin-left: 85px;
+}
+
+.cloud-figure5 {
+	width: 80px;
+	height: 40px;
+	border-top-left-radius: 15em;
+	border-top-right-radius: 15em;
+	margin-top: -40px;
+	margin-left: 120px;
+}

@@ -1,5 +1,13 @@
 doctype html
 html
     include require/head.pug
-body
-    h1(class="h1")="hello"
+    body
+        #page
+            //- top pane
+            .pane 
+                include require/clouds.pug
+        
+            //- bottom pane
+            .pane
+            
+    script(src="js/app.js")
