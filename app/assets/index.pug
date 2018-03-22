@@ -2,16 +2,21 @@ doctype html
 html
     include require/head.pug
     body
-        #page
-            .fixed
-                .character
-            
+        .fixed
+            .character
+        #page            
             //- top pane
             .pane 
+                //- cloudCount need also to be modifie in clouds.scss
+                - var cloudCount = 10
                 include require/clouds.pug
+                
+                .reveal="hello"
+                                        
         
             //- bottom pane
             .pane
+                - var groundWidth = 50
                 include require/ground.pug
             
     script(src="js/app.js")

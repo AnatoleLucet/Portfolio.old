@@ -1,11 +1,11 @@
 div(class="ground")
 	div(class="ground-line")
-		- for (var groundSize = 1; groundSize < 25; groundSize++)
+		- for (var groundSize = 1; groundSize <= groundWidth; groundSize++)
 			div(class="grass")
 				div(class="figure")
 
 	- for (var groundHeight = 1; groundHeight < 8; groundHeight++)			
 		div(class="ground-line")
-			- for (var groundSize = 1; groundSize < 25; groundSize++)
+			- for (var groundSize = 1; groundSize <= groundWidth; groundSize++)
 				div(class="dirt")
 					div(class="figure")

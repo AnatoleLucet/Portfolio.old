@@ -1,0 +1,42 @@
+@keyframes run{
+	7% {background-image: url(../images/character/frames/Frame1.png);}
+	14% {background-image: url(../images/character/frames/Frame2.png);}
+	21% {background-image: url(../images/character/frames/Frame3.png);}
+	28% {background-image: url(../images/character/frames/Frame4.png);}
+	35% {background-image: url(../images/character/frames/Frame5.png);}
+	42% {background-image: url(../images/character/frames/Frame6.png);}
+	49% {background-image: url(../images/character/frames/Frame7.png);}
+	56% {background-image: url(../images/character/frames/Frame8.png);}
+	63% {background-image: url(../images/character/frames/Frame9.png);}
+	70% {background-image: url(../images/character/frames/Frame10.png);}
+	77% {background-image: url(../images/character/frames/Frame11.png);}
+	84% {background-image: url(../images/character/frames/Frame12.png);}
+	91% {background-image: url(../images/character/frames/Frame13.png);}
+	98% {background-image: url(../images/character/frames/Frame14.png);}
+}
+
+.character {
+    position: fixed;
+    z-index: 10;
+    background-image: url(../images/character/final.png);
+    background-repeat: no-repeat;
+    background-size: 115px;
+	width: 115px;
+	height: 230px;
+    bottom: 260px;
+    left: 15vw;
+    //border: 2px solid black;
+}
+
+.ch-run {
+	animation: run 500ms infinite;
+}
+
+.mirror {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}

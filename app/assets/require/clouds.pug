@@ -1,5 +1,5 @@
 div(class="clouds")
-    - for (var numberCloud = 1; numberCloud < 5; numberCloud++)
+    - for (var numberCloud = 1; numberCloud <= cloudCount; numberCloud++)
         div(class="cloud" + numberCloud)
             - for (var numberCloudFigure = 1; numberCloudFigure < 6; numberCloudFigure++)
                 div(class="cloud-figure" + numberCloudFigure)

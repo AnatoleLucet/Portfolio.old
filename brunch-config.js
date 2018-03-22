@@ -29,10 +29,10 @@ exports.npm = {
     styles: {
         'font-awesome': ['css/font-awesome.css']
     },
-    // globals: {
-    //     '$': 'jquery',
-    //     'jQuery': 'jquery'
-    // }
+    globals: {
+        '$': 'jquery',
+        'jQuery': 'jquery'
+    }
 };
 
 exports.modules = {
