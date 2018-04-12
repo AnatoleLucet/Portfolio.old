@@ -7,15 +7,18 @@ html
         #page            
             //- top pane
             .pane 
-                //- cloudCount need also to be modifie in clouds.scss
+                //- cloudCount need also to be modified in clouds.scss
                 - var cloudCount = 10
                 include require/clouds.pug
                 
-                .reveal="hello"
                                         
         
             //- bottom pane
             .pane
+                .popup
+                    h1(class="popup__title")="First Popup"
+                    p(class="popup__paragraph")="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    
                 - var groundWidth = 50
                 include require/ground.pug
             

@@ -1,0 +1,40 @@
+.popup {
+    z-index: 15;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-left: 500px;
+    margin-bottom: 300px;
+    background-color: #472A16;
+    clip-path: polygon(
+        15% 0%,
+        85% 0%,
+        100% 20%,
+        100% 80%,
+        85% 100%,
+        15% 100%,
+        0% 80%,
+        0% 20%
+    );
+    -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 20%, 100% 80%, 85% 100%, 15% 100%, 0% 80%, 0% 20%);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ddd;
+    font-family: "Ubuntu";
+
+    &__title {
+        font-size: 1.8em;
+        margin: 3%;
+    }
+    &__paragraph {
+        white-space: pre-wrap;
+        width: 80%;
+        margin: 0 10% 13%;
+        font-size: 1.1em;
+        border: 2px solid #372010;
+        padding: 20px;
+    }
+}
